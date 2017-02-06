@@ -56,8 +56,8 @@ Instructions:
             reject(Error('Network Error'));
         };
         req.send();
-        }
-    });
+        });
+    }
     
 
   window.addEventListener('WebComponentsReady', function() {
@@ -70,7 +70,7 @@ Instructions:
     get('../data/earth-like-results.json')
     .then(function(response) {
         addSearchHeader(response);
-    });
+    })
     .catch(function(error) {
         addSearchHeader('unknown');
         console.log(error);
